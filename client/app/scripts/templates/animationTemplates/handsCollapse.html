@@ -1,0 +1,10 @@
+
+<div>
+    <div ng-class="{
+					false: 'glyphicon glyphicon-hand-down',
+				    true:'glyphicon glyphicon-hand-up'
+				   }[sharedData.visible]"
+         ng-click="toggleVisibility()"></div>
+    <span ng-transclude> </span>
+</div>
+

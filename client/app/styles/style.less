@@ -1,0 +1,101 @@
+/* ------------------ Less variables ------------------ */
+@background-color: #ffdf70;
+@middle-section-background-color: #27332B;
+@infoHeader-background: #ffdf70;
+@well-background: #acd7e3;
+@well-border-color: #4a000c;
+
+/* ------------------ Bootstrap override ------------------ */
+.container {
+    height:1280px;
+}
+
+.row {
+    margin-top:10px;
+}
+
+.navbar-default {
+    margin-top:15px;
+    border-color:inherit;
+}
+.well {
+  min-height: 20px;
+  padding: 19px;
+  margin-bottom: 20px;
+  background-color: @well-background;
+  border: 2px solid @well-border-color;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+.smallWell {
+  .well;
+  background-color: @infoHeader-background;
+}
+
+.btn {
+  width:100%;
+}
+
+.table-bordered {
+  border: 5px solid #ddd;
+}
+
+.table {
+  margin-top: 20px;
+}
+
+.form-horizontal .control-label {
+  text-align: inherit;
+}
+
+
+
+/* ------------------ Regular css ------------------ */
+
+body{
+    background-color: @background-color;
+    height: 100%;
+}
+
+
+.background2 {
+    background-color: @middle-section-background-color;
+}
+
+
+
+.verticalSpace {
+  margin-bottom:10%;
+}
+
+
+
+.infoHeader {
+  width:90%;
+  margin-bottom: 5%;
+  padding-left: 10px;
+  background-color: @infoHeader-background;
+  font-size: large;
+
+}
+
+.regListItem {
+  list-style-type: none;
+}
+
+.scrollIt {
+  overflow:scroll;
+  height:250px;
+}
+
+
+.votingWidget {
+  padding: 7px;
+}
+
+.votingButton {
+  padding-left:2.5px;
+  cursor:pointer;
+}

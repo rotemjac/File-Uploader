@@ -1,0 +1,33 @@
+
+
+        <collapsible-wrapper class="well">
+            <span class="infoHeader"> <b>Name: {{ cat.name }} </b>  </span>
+            <br>
+            <collapsible>
+                <section  class="row clearfix ">
+                    <div class="col-md-12 column">
+
+                        <div class="col-md-8 column smallWell">
+                            <dynamic-columns colnum="3" c1="1" c2="10" c3="1"  >
+                                <my-image source="cat.imageUrl"></my-image>
+                            </dynamic-columns>
+                        </div>
+
+                        <div class="col-md-1 column"></div>
+
+                        <div class="col-md-3 column smallWell">
+                                <h6><b>Id:</b> {{cat.id}}.</h6>
+                                <h6><b>Birthday:</b> {{cat.birthday}}.</h6>
+                                <h6><b>Description:</b> {{cat.description}}.</h6>
+                                <h6><b>Fur:</b> {{cat.fur}}.</h6>
+                        </div>
+
+                    </div>
+                </section>
+            </collapsible>
+        </collapsible-wrapper>
+
+
+
+
+

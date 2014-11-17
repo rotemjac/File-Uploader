@@ -1,0 +1,46 @@
+
+<div class="well" style="margin-bottom: 10px">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Cat creator</h3>
+        </div>
+        <div class="panel-body">
+            <form class="form-horizontal" role="form">
+                <div class="form-group">
+                    <label class="col-sm-2  control-label">Name:</label >
+                    <div   class="col-sm-10">
+                        <input class="form-control" name="name" placeholder="Enter cat's name" type="text" ng-model="formData.name">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2  control-label">Birthday:</label >
+                    <div   class="col-sm-10">
+                        <input class="form-control" name="birthday" type="text" ng-model="formData.birthday" my-datepicker>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2  control-label">Description:</label >
+                    <div   class="col-sm-10">
+                        <input class="form-control" name="description" placeholder="Description" type="text" ng-model="formData.description">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2  control-label">Fur:</label>
+                    <div   class="col-sm-10 checkbox">
+                        <input id ="gray"  type="radio"     value="gray"     name="fur" ng-model="formData.fur">
+                        <label for="gray"> gray</label>
+                        <input id ="ginger"  type="radio"   value="ginger"   name="fur" ng-model="formData.fur">
+                        <label for="ginger"> ginger</label>
+                        <input id ="black"  type="radio"    value="black"    name="fur" ng-model="formData.fur">
+                        <label for="black"> black</label>
+                        <input id ="tricolor"  type="radio" value="tricolor" name="fur" ng-model="formData.fur">
+                        <label for="tricolor"> tricolor</label>
+                    </div>
+                </div>
+                <input class="btn btn-lg btn-success btn-block" type="submit" value="Create Cat" ng-click="create()">
+            </form>
+        </div>
+    </div>
+</div>
+
+

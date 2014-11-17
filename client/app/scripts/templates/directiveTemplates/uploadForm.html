@@ -1,0 +1,27 @@
+
+
+<div class="well" style="margin-bottom: 10px">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Photo uploader</h3>
+        </div>
+        <div class="panel-body">
+            <form class="form-horizontal" role="form">
+                <div class="form-group">
+                    <label class="col-sm-3  control-label">Select image:</label >
+                    <div   class="col-sm-9">
+                        <input class="form-control" name="photo" type="file" ng-file="fileModel">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3  control-label">Cat id:</label >
+                    <div   class="col-sm-9">
+                        <input class="form-control" name="catId" type="text" ng-model="catId">
+                    </div>
+                </div>
+
+                <input class="btn btn-lg btn-success btn-block" type="submit" value="Upload Photo" ng-click="upload()">
+            </form>
+        </div>
+    </div>
+</div>
