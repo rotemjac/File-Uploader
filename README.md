@@ -1,8 +1,6 @@
 File-Uploader
 =============
 
-Angulajs + bootstrap on client
-
 
 Quick navigation inside the files:
 
