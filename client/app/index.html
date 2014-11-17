@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Angular sniffer</title>
+
+	<link href="styles/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet/less" type="text/css" href="styles/style.less" />
+    <link rel="stylesheet/less" type="text/css" href="styles/datePickerStyle.less" />
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+  <![endif]-->
+
+  
+
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="lib/jquery/dist/jquery.js"></script>
+    <script src="lib/jquery-ui/jquery-ui.js"></script>
+    <script src="lib/es5-shim/es5-shim.js"></script>
+    <script src="lib/angular/angular.js"></script>
+    <script src="lib/json3/lib/json3.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="lib/angular-resource/angular-resource.js"></script>
+    <script src="lib/angular-cookies/angular-cookies.js"></script>
+    <script src="lib/angular-sanitize/angular-sanitize.js"></script>
+    <script src="lib/angular-animate/angular-animate.js"></script>
+    <script src="lib/angular-touch/angular-touch.js"></script>
+    <script src="lib/angular-route/angular-route.js"></script>
+    <script src="lib/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="lib/d3/d3.js"></script>
+    <script src="lib/less/dist/less-1.7.5.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+
+    <script src="scripts/modules/app.js"></script>
+    <script src="scripts/services/configServices.js"></script>
+    <script src="scripts/services/generalServices.js"></script>
+    <script src="scripts/controllers/controllers.js"></script>
+    <script src="scripts/routes/routes.js"></script>
+	<script src="scripts/directives/mainPageDirectives.js"></script>
+    <script src="scripts/directives/uiDirectives.js"></script>
+    <script src="scripts/directives/animationDirectives.js"></script>
+
+</head>
+
+
+<body ng-app="myApp">
+
+<div class="container">
+
+
+
+    <header class="row clearfix">
+        <nav class="navbar col-md-12 column">
+            <div>
+                <responsive-nav header = "Fdna">
+                    <li><a href="#/home">Home</a></li>
+                    <li><a href="#/create">Create Cat</a></li>
+                    <li><a href="#/upload">Upload image</a></li>
+                    <li><a href="#/settings">Settings</a></li>
+                </responsive-nav>
+            </div>
+        </nav>
+    </header>
+
+
+    <section style="margin-bottom: 10px">
+        <dynamic-columns colnum="3" c1="1" c2="10" c3="1"  >
+            <ng-view></ng-view>
+        </dynamic-columns>
+    </section>
+
+
+
+    <footer class="row clearfix">
+        <div id="navbar" class="navbar navbar-inverse navbar-fixed-bottom"></div>
+    </footer>
+
+
+
+</div>
+
+</body>
+
+</html>
